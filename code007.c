@@ -1,11 +1,16 @@
-/* code 007*/
+/* code006 */
 #include <stdio.h>
 
-double fahrenheit=100, celsius=0;
+const double PI = 3.1415926;    // Konstante mit dem Wert von PI
+const double RADIUS = 4.0;        // Konstante mit dem Wert 4
 
 int main(void)
 {
-     celsius = ((5.0/9.0)*(fahrenheit-32));  // Division von 5.0 / 9.0 als Gleitpunktzahl!
+   double umfang=0, flaeche=0;
 
-     printf("%.0f Grad Fahrenheit = %.2f Grad Celsius\n",fahrenheit, celsius);
+   umfang = 2 * RADIUS * PI;
+   flaeche = RADIUS * RADIUS * PI;
+
+   printf("Umfang des Kreises: %f",umfang);
+   printf("\nFlaeche des Kreises: %f",flaeche);
 }

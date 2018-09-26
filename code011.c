@@ -1,18 +1,19 @@
-/* code 011*/
+/* code 010*/
 #include <stdio.h>
 
-int i=2;    // globale Variable i=2
+double fahrenheit=100, celsius=0;  	        // diese Variablen sind globale Variablen
 
-void add(void)
+double temperaturumrechnung(void)           // Funktion temperaturumrechnung mit Rückgabewert double
 {
-    int ergebnis = i+i;    // ergebnis = 4
-    printf("ergebnis = %d\n", ergebnis);
+    return ((5.0/9.0)*(fahrenheit-32));     // return Division von 5.0 / 9.0 als Gleitpunktzahl!
 }
+
 int main(void)
 {
-    add();      // ruft die Funktion add() auf
-
-    int ergebnis = 5 * i;  // ergebnis = 10
-
-    printf("ergebnis = %d\n", ergebnis);
+    /* ruft die Funktion temperaturumrechnung auf und speichert den returnwert in celsius */
+    celsius = temperaturumrechnung();
+    printf("%.0f Grad Fahrenheit = %.2f Grad Celsius\n",fahrenheit, celsius);
+    fahrenheit += 10;      // erhöht den Wert von fahrenheit um 10
+    celsius = temperaturumrechnung();
+    printf("%.0f Grad Fahrenheit = %.2f Grad Celsius\n",fahrenheit, celsius);
 }

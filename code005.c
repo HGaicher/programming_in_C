@@ -1,15 +1,9 @@
-/* code 005 */
+/* code 004 */
 #include <stdio.h>
 
 int main (void)					
 {          
-     int a=2, b=5, hilf=0;
-
-     printf("Die Variable a = %i und b = %i",a,b);	
-
-     hilf = a;
-     a = b;
-     b = hilf;
-
-     printf("\nDie Variable a = %i und b = %i",a,b);	
+	int a=10, b=2, sum=0;
+	sum = a + b;
+	printf("Die Summe aus %i + %i = %i\n",a ,b ,sum);	
 }

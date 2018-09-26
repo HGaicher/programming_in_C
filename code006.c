@@ -1,16 +1,15 @@
-/* code006 */
+/* code 005 */
 #include <stdio.h>
 
-const double PI = 3.1415926;    // Konstante mit dem Wert von PI
-const double RADIUS = 4.0;        // Konstante mit dem Wert 4
+int main (void)					
+{          
+     int a=2, b=5, hilf=0;
 
-int main(void)
-{
-   double umfang=0, flaeche=0;
+     printf("Die Variable a = %i und b = %i",a,b);	
 
-   umfang = 2 * RADIUS * PI;
-   flaeche = RADIUS * RADIUS * PI;
+     hilf = a;
+     a = b;
+     b = hilf;
 
-   printf("Umfang des Kreises: %f",umfang);
-   printf("\nFlaeche des Kreises: %f",flaeche);
+     printf("\nDie Variable a = %i und b = %i",a,b);	
 }

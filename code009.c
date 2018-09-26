@@ -1,16 +1,19 @@
-/* code 009*/
+/* code 008*/
 #include <stdio.h>
 
 int main(void)
 {
-     const float MWST = 20;
-     float betrag;
+    double a, b, c, d, e;
 
-     printf("Bitte geben Sie den Verkaufspreis ein \n");
-     scanf("%f", &betrag);
+    a = 5/9;
+    b = 5.0/9;
+    c = 5.0/9.0;
+    d = 5/2;
+    e = 8/3;
 
-     printf("Der Nettobetrag = %.2f\n", betrag/1.2);
-     printf("Die MwSt = %.2f\n", betrag - (betrag/1.2));
-
-     //MWST = 25;  // Eine erneute Wertzuweisung ist nicht erlaubt!
+	printf("a = %f\n",a);   // = 0.000000
+	printf("b = %f\n",b);   // = 0.555556
+	printf("c = %f\n",c);   // = 0.555556
+    	printf("d = %f\n",d);   // = 2.000000
+	printf("e = %f\n",e);   // = 2.000000
 }
