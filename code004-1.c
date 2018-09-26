@@ -9,5 +9,5 @@ void addiere(void);         	// Deklaration der Funktion addiere welche sich in 
 int main(void)              	// Definition der Funktion main
 {
      addiere();             	// Aufruf der Funktion addiere in add.c
-     printf("Summe = %d\n",x);	// Ausgabe von x, Summe = 10
+     printf("Summe = %d\n",x);// Ausgabe von x, Summe = 10
 }
