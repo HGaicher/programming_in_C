@@ -5,7 +5,7 @@ int main (void)
 {          
      int a=2, b=5, hilf=0;
 
-     printf("Die Variable a = %i und b = %i",a,b);	
+     printf("Die Variable a = %i und b = %i",a,b);
 
      hilf = a;
      a = b;
